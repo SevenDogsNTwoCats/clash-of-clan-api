@@ -159,7 +159,7 @@ body{
 
 .card{
     margin-top: 30px;
-    width: 500px;
+    width: 600px;
     height: 190px;
     border-radius: 25px;
     overflow: hidden;
@@ -181,7 +181,7 @@ body{
 .cardText{
     font-size: 1.8em;
     font-weight: bold;
-    width: 280px;
+    width: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
