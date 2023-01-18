@@ -1,0 +1,31 @@
+<h1>clan data</h1>
+
+<ul>
+    <li>
+        Clan Tag {{ data.tag }}
+    </li>
+    <li>
+        Clan Name {{ data.name }}
+    </li>
+    <li>
+        clan Level {{ data.clanLevel }}
+    </li>
+    <li>
+        warWins {{ data.warWins }}
+    </li>
+    <li>
+        {{ data.description }}
+    </li>
+    <li>
+        location {{ data.location.name }}
+    </li>
+</ul>
+
+<div>
+    <h2>Members</h2>
+    <ul>
+        {% for member in data.memberList %}
+        <li>{{ member.name }} - {{ member.league.name}}</li>
+        {% endfor %}
+    </ul>
+</div>

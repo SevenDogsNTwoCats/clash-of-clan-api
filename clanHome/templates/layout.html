@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headContainer">
+            <div class="banner">
+                <img class="bannerBg" src="{% static 'img/banner.jpg' %}" alt="Banner" width="500">
+                <img class="clanLogo" src="{% static 'icons/logo.png' %}" alt="LogoClan">
+
+            </div>
+            <div class="navBar">
+                <div class="socialMedia">
+                    <a class="instagramLink socialMediaLink" href="https://www.instagram.com/clan.losmagios/"><img
+                            class="instagramImg socialMediaImg" src="{% static 'icons/Instagram.png' %}" alt="Instagram"
+                            width='30'></a>
+                    <a class="facebookLink socialMediaLink" href="https://www.facebook.com/ClashofClans/"><img
+                            class="facebookImg socialMediaImg" src="{% static 'icons/Facebook.png' %}" alt="Facebook"
+                            width='30'></a>
+                </div>
+                <div class="bannerLinks">
+                    <a class="rulesLink link" href="https://losmagiosclancoc.wixsite.com/paginadelclan">REGLAS DEL
+                        CLAN</a>
+                    <a class="aboutLink link" href="">ABOUT</a>
+                </div>
+            </div>
+            <div class="bodyContainer">
+                {% block bodyContainer %}
+                {% endblock %}
+            </div>
+        </div>
+
+
+
+    </div>
+
+</html>

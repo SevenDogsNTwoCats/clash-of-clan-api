@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block bodyContainer %}
+
+<div class="clanDetails">
+    <div class="clanHead">
+        <div class="clanTitle">
+            <p class="clanName">{{ data.name }}</p>
+            <p class="clanTag">{{ data.tag }}</p>
+        </div>
+        <img src="https://api-assets.clashofclans.com/badges/200/o9zTa8fKX8gFsAepY5oVYwet2qJo-YLkNZ53sX9Qiho.png"" alt="
+            Shelt">
+    </div>
+    <p class="description">{{ data.description }}</p>
+    <ul class="detailsListUl">
+        <li class="detailsList">
+            <p class="liTitle">Puntos Del Clan: </p>
+            <p class="liDescription">{{data.clanPoints}}</p>
+        </li>
+        <li class="detailsList">
+            <p class="liTitle">Ubicacion: </p>
+            <p class="liDescription">{{data.location.name}}</p>
+        </li>
+        <li class="detailsList">
+            <p class="liTitle">Guerras ganadas: </p>
+            <p class="liDescription">{{data.warWins}}</p>
+        </li>
+        <li class="detailsList">
+            <p class="liTitle">Racha: </p>
+            <p class="liDescription">{{data.warWinStreak}}</p>
+        </li>
+        <li class="detailsList">
+            <p class="liTitle">Liga de Guerra: </p>
+            <p class="liDescription">{{data.warLeague.name}}</p>
+        </li>
+        <li class="detailsList">
+            <p class="liTitle">Liga de la Capital: </p>
+            <p class="liDescription">{{data.capitalLeague.name}}</p>
+        </li>
+        <li class="detailsList">
+            <p class="liTitle">Miembros: </p>
+            <p class="liDescription">{{data.members}}</p>
+        </li>
+        <li class="detailsList">
+            <p class="liTitle">Trofeos Requeridos: </p>
+            <p class="liDescription">{{data.requiredTrophies}}</p>
+        </li>
+    </ul>
+</div>
+
+<div class="cardsContainer">
+    <div class="card">
+        <div class="cardImg">
+            <img  class="cardBg" src="{% static 'img/collage.jpg' %}" alt="cardImg">
+        </div>
+        <div class="cardText">
+            <p class="cardTitle">MIEMBROS</p> 
+        </div>
+    </div>
+    <div class="card">
+        <div class="cardImg">
+            <img class="cardBg" src="{% static 'img/queen.jpg' %}" alt="cardImg">
+        </div>
+        <div class="cardText">
+            <p class="cardTitle">GUERRA ACTUAL</p> 
+        </div>
+    </div>
+    <div class="card">
+        <div class="cardImg">
+            <img class="cardBg" src="{% static 'img/ballonsArcher.png' %}" alt="cardImg">
+        </div>
+        <div class="cardText">
+            <p class="cardTitle">TOP ARGENTINA</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div>
+    <h2>Members</h2>
+    <ul>
+        {% for member in data.memberList %}
+        <li>{{ member.name }} - {{ member.league.name}}</li>
+        {% endfor %}
+    </ul>
+</div> -->
+{% endblock %}

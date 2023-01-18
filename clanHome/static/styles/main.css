@@ -1,0 +1,194 @@
+:root{
+    --colorPrimary : #063178 ;
+    --colorPrimaryLight : #8b8ff1 ;
+    --colorPrimarySoft : #5663a3;
+    --colorSecondary:  #cfa7b0;
+    --colorComplementary : #ec9432 ;
+
+    --colorPrimary2 : #19dd90 ;
+    --colorPrimaryLight2 : #5ecc91 ;
+    --colorPrimarySoft2 : #0ea860;
+    --colorSecondary2 :  #becc96;
+    --colorComplementary2 : #ac8c58 ;
+
+    --colorWhite : #fff;
+    --colorBlack : #000000;
+    --colorPekka : #34445b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--colorPrimarySoft);
+}
+
+.container{
+    width: 100vmax;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerBg{
+    width: 110%;
+    z-index: -1;
+    margin-right: -20px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.clanLogo{
+    margin: 35px 25px;
+    width: 290px;
+}
+
+.navBar{
+    background-color: var(--colorComplementary);
+    display: flex;
+}
+
+.socialMedia{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.socialMediaImg{
+    width: 50px;
+}
+
+.bannerLinks{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    font-size: 1.8em;
+    padding-top: 20px;
+    text-decoration: none;
+    color: var(--colorWhite)
+}
+
+.link:hover{
+    font-weight: bold;
+}
+
+.link:focus{
+    color: var(--colorPrimaryLight);
+}
+
+.bodyContainer{
+    background-color: var(--colorPekka);
+    min-height: 100vh;
+}
+
+.clanHead{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clanTitle{
+    padding-right: 15px;
+}
+
+.clanName{
+    font-size: 68px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--colorWhite);
+}
+
+.clanTag{
+    color: var(--colorPrimaryLight);
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.description{
+    padding: 10px;
+    color: var(--colorWhite);
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    font-style: oblique;
+    font-size: 1.7em;
+}
+
+.detailsListUl{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: var(--colorWhite);
+}
+
+.detailsList{
+    display: flex;
+    font-size: 1.7em;
+    justify-content: space-between;
+}
+
+.liTitle{
+    font-weight: bold;
+}
+
+.cardsContainer{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.card{
+    margin-top: 30px;
+    width: 500px;
+    height: 190px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--colorWhite);
+}
+
+.cardImg{
+    width: 220px;
+    overflow: hidden;
+    border-right: 15px solid var(--colorPrimarySoft2);
+}
+
+.cardBg{
+    height: 100%;
+}
+
+.cardText{
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTitle{
+    text-align: center;
+}
+
+
